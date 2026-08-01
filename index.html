@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanpreet Kaur | Portfolio | Computer Science Student</title>
+    <meta name="description" content="Portfolio of Chanpreet Kaur, a B.Tech Computer Science and Engineering student at NIT Jalandhar. Showcase of projects, internships, skills, and academic achievements.">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- AOS Scroll Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="#hero" class="logo-link">
+                <img src="chanpreet_logo.jpg" alt="Chanpreet Kaur Logo" class="logo-img" width="40" height="40">
+                <span class="logo-text-nav">Chanpreet<span>.</span></span>
+            </a>
+            <ul id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="glow-bg glow-1"></div>
+        <div class="glow-bg glow-2"></div>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <p class="greeting">Welcome to my space</p>
+                <h1>Hey, I'm <br><span class="name">Chanpreet Kaur</span></h1>
+                <h2>
+                    <i class="fas fa-code" style="color: var(--accent-gold);"></i> 
+                    <span>CSE Student & SWE Intern</span>
+                </h2>
+                <p class="desc">
+                    A dedicated and forward-thinking B.Tech Computer Science and Engineering student at NIT Jalandhar. 
+                    Passionate about building scalable web applications, risk-aware systems, and engineering software solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="Chanpreet_Kaur_Resume.pdf?v=2" target="_blank" class="btn-primary" id="btnResume">
+                        <i class="fas fa-file-pdf"></i> View Resume
+                    </a>
+                    <a href="#contact" class="btn-secondary" id="btnContactHero">Get In Touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/chanpreetkaur05/" target="_blank" title="LinkedIn" id="linkLinkedinHero"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/chan570" target="_blank" title="GitHub" id="linkGithubHero"><i class="fab fa-github"></i></a>
+                    <a href="mailto:kaurchan2005@gmail.com" title="Email" id="linkMailHero"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/its._chan._5/" target="_blank" title="Instagram" id="linkInstaHero"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-container" data-aos="fade-left">
+                <div class="hero-img-wrapper">
+                    <img src="ABOUT.jpg" alt="Chanpreet Kaur Profile">
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About <span>Me</span></h2>
+            <div class="about-layout">
+                <div class="about-left" data-aos="fade-right">
+                    <div class="about-img-box">
+                        <img src="ABOUT.jpg" alt="Chanpreet Kaur Presentation">
+                    </div>
+                </div>
+                <div class="about-right" data-aos="fade-left">
+                    <p class="bio">
+                        I'm Chanpreet Kaur, a B.Tech Computer Science and Engineering student at Dr. B. R. Ambedkar National Institute of Technology, Jalandhar (2023 – 2027). I have a strong academic foundation, holding a CGPA of 9.13/10, alongside a deep interest in software engineering and web development.
+                        <br><br>
+                        My focus centers on constructing robust, responsive web platforms, backend systems, and risk-aware architectures. Collaborative settings and hackathons excite me, prompting me to continuously learn and integrate new technical frameworks.
+                    </p>
+                    <div class="about-tabs">
+                        <div class="tab-headers">
+                            <button class="tab-btn active" onclick="opentab('coursework')">Coursework</button>
+                            <button class="tab-btn" onclick="opentab('hobbies')">Hobbies</button>
+                        </div>
+                        
+                        <div class="tab-pane active" id="coursework">
+                            <div class="coursework-grid">
+                                <span class="course-tag">Data Structures and Algorithms</span>
+                                <span class="course-tag">Object-Oriented Programming</span>
+                                <span class="course-tag">Database Management Systems</span>
+                                <span class="course-tag">Operating Systems</span>
+                                <span class="course-tag">Computer Networks</span>
+                                <span class="course-tag">Data Analysis</span>
+                                <span class="course-tag">Machine Learning</span>
+                                <span class="course-tag">Computer Architecture</span>
+                                <span class="course-tag">Artificial Intelligence</span>
+                                <span class="course-tag">Software Engineering</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="hobbies">
+                            <ul class="hobbies-list">
+                                <li class="hobby-item">
+                                    <div class="hobby-icon"><i class="fas fa-laptop"></i></div>
+                                    <div class="hobby-text">
+                                        <h4>Technology Exploration</h4>
+                                        <p>Experimenting with modern dev tools, testing packages, and cloud utilities.</p>
+                                    </div>
+                                </li>
+                                <li class="hobby-item">
+                                    <div class="hobby-icon"><i class="fas fa-play"></i></div>
+                                    <div class="hobby-text">
+                                        <h4>Bhangra</h4>
+                                        <p>Serves as Head of the Bhangra Club at NIT Jalandhar. Keeps me active and connected to my roots.</p>
+                                    </div>
+                                </li>
+                                <li class="hobby-item">
+                                    <div class="hobby-icon"><i class="fas fa-microphone"></i></div>
+                                    <div class="hobby-text">
+                                        <h4>Singing</h4>
+                                        <p>My artistic outlet and creative focus outside of tech and coding.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical <span>Skills</span></h2>
+            <div class="skills-categories">
+                <!-- Languages -->
+                <div class="skills-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skills-card-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                
+                <!-- Web Development -->
+                <div class="skills-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skills-card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Dev</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">HTML5 / CSS3</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                
+                <!-- Libraries -->
+                <div class="skills-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skills-card-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Libraries</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">OpenCV</span>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="skills-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skills-card-header">
+                        <i class="fas fa-screwdriver-wrench"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skills-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skills-card-header">
+                        <i class="fas fa-users-gear"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Professional <span>Experience</span></h2>
+            <div class="timeline">
+                <!-- Cisco -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date"><i class="far fa-calendar-alt"></i> 06/2026 – Present</span>
+                        <h3>Campus Ambassador</h3>
+                        <h4 style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-cisco" style="color: #1ba0d7; font-size: 1.2rem;"></i> Cisco (Remote)
+                        </h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Promoted technical initiatives and represented the institute in campus outreach.</li>
+                                <li>Represented Cisco in facilitating student learning networks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AlgoUniversity -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date"><i class="far fa-calendar-alt"></i> 05/2025 – 07/2025</span>
+                        <h3>SWE Intern</h3>
+                        <h4 style="display: flex; align-items: center; gap: 8px;">
+                            <img src="company2.jpg" alt="AlgoUniversity Logo" style="width: 18px; height: 18px; border-radius: 50%; object-fit: cover;"> AlgoUniversity (Remote)
+                        </h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Developed scalable MERN-stack web applications with responsive interfaces.</li>
+                                <li>Collaborated with developers using GitHub for efficient codebase integration.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+                <!-- SafePath -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img-box">
+                        <img src="safepath_banner.jpg" alt="SafePath Women's Safety Route Planner Preview">
+                        <div class="project-img-overlay"></div>
+                        <div class="project-tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>Leaflet</span>
+                            <span>OSM API</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SafePath – Women’s Safety Route Planner</h3>
+                        <ul>
+                            <li>Developed a safety-focused route planner using a weighted Dijkstra algorithm for risk-aware navigation.</li>
+                            <li>Built dynamic road graphs using OpenStreetMap Overpass API with safety-based edge weighting.</li>
+                            <li>Integrated Nodemailer to deliver real-time SOS alerts with live location sharing.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://safepath-gamma.vercel.app/" target="_blank" id="linkSafepathLive"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fraud Detection -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img-box">
+                        <img src="fraud_detection_banner.jpg" alt="Fraud Detection Engine Preview">
+                        <div class="project-img-overlay"></div>
+                        <div class="project-tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Elasticsearch</span>
+                            <span>PySpark</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Search Ranking & Review Fraud Detection</h3>
+                        <ul>
+                            <li>Built a fraud detection system to identify duplicate reviews, detect rating spam, and profile rating farms.</li>
+                            <li>Integrated NLP-based sentiment analysis with exponential time-decay weighting to prioritize recent reviews.</li>
+                            <li>Optimized search performance by offline batch processing, reducing query latency.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://chan570.github.io/myntrarank/" target="_blank" id="linkFraudLive"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagify -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-img-box">
+                        <img src="imagify_banner.jpg" alt="Imagify AI Text to Image Generator Preview">
+                        <div class="project-img-overlay"></div>
+                        <div class="project-tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>Tailwind CSS</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Imagify – Text to Image Generator</h3>
+                        <ul>
+                            <li>Developed a full-stack AI image generation platform using REST architecture.</li>
+                            <li>Designed modular backend architecture for scalability and maintainability.</li>
+                            <li>Created custom sleek dashboards utilizing responsive Tailwind CSS frameworks.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://imagyy-frontend.onrender.com/" target="_blank" id="linkImagifyLive"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Education</span></h2>
+            <div class="edu-grid">
+                <!-- NITJ -->
+                <div class="edu-card" data-aos="fade-right">
+                    <div class="edu-logo-wrapper">
+                        <img src="nitjlogo.webp" alt="NIT Jalandhar Logo">
+                    </div>
+                    <div class="edu-info">
+                        <span class="date">08/2023 – 06/2027</span>
+                        <h3>Dr. B. R. Ambedkar NIT Jalandhar</h3>
+                        <h4>Bachelor of Technology in Computer Science & Engineering</h4>
+                        <div class="edu-metrics">
+                            <span class="metric-badge">CGPA: 9.13/10</span>
+                        </div>
+                        <ul class="edu-bullets">
+                            <li>Acquired strong academic foundations in core computer science.</li>
+                            <li>Grasped operating systems, database management systems, OOP, and data networks.</li>
+                            <li>Recipient of First Year merit scholarship (₹25k) recognizing academic topper achievements.</li>
+                        </ul>
+                        <a href="https://www.nitj.ac.in/" target="_blank" class="btn-visit" id="btnNitjWebsite">
+                            <i class="fas fa-globe"></i> Visit Website
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Meritorious School -->
+                <div class="edu-card" data-aos="fade-left">
+                    <div class="edu-logo-wrapper">
+                        <img src="meritorious-school-MOHALI-logo.jpg" alt="Meritorious School Logo">
+                    </div>
+                    <div class="edu-info">
+                        <span class="date">04/2022 – 03/2023</span>
+                        <h3>Meritorious School Mohali</h3>
+                        <h4>Senior Secondary (Class XII, Non-Medical)</h4>
+                        <div class="edu-metrics">
+                            <span class="metric-badge">Percentage: 97.6%</span>
+                        </div>
+                        <ul class="edu-bullets">
+                            <li>Secured Punjab State Rank 12 and District Rank 3 in Class XII examinations.</li>
+                            <li>Cleared competitive metrics including NTSE, PUCET (Rank 11), and HCL-Tech BEE.</li>
+                        </ul>
+                        <a href="https://schoolofeminence.pseb.ac.in/" target="_blank" class="btn-visit" id="btnSchoolWebsite">
+                            <i class="fas fa-globe"></i> Visit Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Key <span>Achievements</span></h2>
+            <div class="achievements-grid">
+                <!-- JP Morgan -->
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="achievement-details">
+                        <h3>J.P. Morgan Code for Good 2025</h3>
+                        <p>Selected among the top 5 students from the college to participate in the hackathon.</p>
+                    </div>
+                </div>
+
+                <!-- Leetcode -->
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-icon"><i class="fas fa-code-branch"></i></div>
+                    <div class="achievement-details">
+                        <h3>350+ LeetCode Solved</h3>
+                        <p>Covered advanced algorithms and data structures questions to refine problem-solving skills.</p>
+                    </div>
+                </div>
+
+                <!-- AlgoFellowship -->
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <div class="achievement-details">
+                        <h3>AlgoUniversity Fellowship</h3>
+                        <p>Ranked among the Top 70 out of 20,000+ candidates nationwide for advanced engineering mentorship.</p>
+                    </div>
+                </div>
+
+                <!-- State Merit -->
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                    <div class="achievement-details">
+                        <h3>Punjab State Board Merit</h3>
+                        <p>Secured All Punjab Rank 12 in Class XII Senior Secondary Board examinations.</p>
+                    </div>
+                </div>
+
+                <!-- CSE Topper -->
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="achievement-icon"><i class="fas fa-star"></i></div>
+                    <div class="achievement-details">
+                        <h3>Academic Excellence Award</h3>
+                        <p>Honored as the Department Topper in the First Year of B.Tech (Computer Science & Engineering).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Extracurriculars -->
+    <section id="leadership">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Leadership <span>& Activities</span></h2>
+            <div class="leadership-grid">
+                <!-- Bhangra Club -->
+                <div class="leadership-card" data-aos="fade-right">
+                    <div class="leadership-header">
+                        <div class="leadership-role">
+                            <h3>Head</h3>
+                            <h4>Bhangra Club</h4>
+                        </div>
+                        <span class="leadership-org">NIT Jalandhar</span>
+                    </div>
+                    <div class="leadership-body">
+                        <ul>
+                            <li>Led and coordinated a team of 30+ members for cultural performances, competitive events, and institute festivals.</li>
+                            <li>Represented the institute at national inter-college cultural programs promoting Punjabi folk culture.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Rural Activity Club -->
+                <div class="leadership-card" data-aos="fade-left">
+                    <div class="leadership-header">
+                        <div class="leadership-role">
+                            <h3>Member</h3>
+                            <h4>Rural Activity Club</h4>
+                        </div>
+                        <span class="leadership-org">NIT Jalandhar</span>
+                    </div>
+                    <div class="leadership-body">
+                        <ul>
+                            <li>Contributed to social welfare initiatives focusing on rural education, community hygiene, and local development.</li>
+                            <li>Collaborated with volunteers to structure and host outreach campaigns benefiting rural families.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container contact-layout">
+            <div class="contact-info" data-aos="fade-right">
+                <h2>Let's <span>Connect</span></h2>
+                <p class="lead">Have an interesting project, internship opportunity, or just want to chat? Drop me a message and I'll get back to you!</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <span>Email</span>
+                            <h4><a href="mailto:kaurchan2005@gmail.com">kaurchan2005@gmail.com</a></h4>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-text">
+                            <span>Phone</span>
+                            <h4>+91 8699827710</h4>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="contact-text">
+                            <span>LinkedIn</span>
+                            <h4><a href="https://www.linkedin.com/in/chanpreetkaur05/" target="_blank">chanpreetkaur05</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-box" data-aos="fade-left">
+                <form name="submit-to-google-sheet">
+                    <div class="form-group">
+                        <input type="text" name="Name" placeholder="Your Name" required id="formNameInput">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="Email" placeholder="Your Email" required id="formEmailInput">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" placeholder="Your Message" required id="formMessageInput"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" id="btnFormSubmit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; Chanpreet Kaur. Made with <i class="fas fa-heart"></i>. All rights reserved.</p>
+    </footer>
+
+    <!-- Script Libraries -->
+    <!-- AOS Scroll Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init AOS
+        AOS.init({
+            once: true,
+            duration: 1000,
+            easing: 'ease-out-cubic'
+        });
+
+        // Sticky header styling scroll event
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.className = 'fas fa-times';
+            } else {
+                icon.className = 'fas fa-bars';
+            }
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.querySelector('i').className = 'fas fa-bars';
+            });
+        });
+
+        // About tabs switcher
+        function opentab(tabname) {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+            
+            event.currentTarget.classList.add('active');
+            document.getElementById(tabname).classList.add('active');
+        }
+
+        // Form submission endpoint to Google Sheets script
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzvkBOdykkgGUJuyedcSyWmMongWlkMvm0TJebQ8dzzEgrE53h9h4LwlEQnp_T15PnWkg/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            msg.innerHTML = "Sending...";
+            
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully! Thank you.";
+                    setTimeout(function(){
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    msg.innerHTML = "Error sending message. Please try again.";
+                    setTimeout(function(){
+                        msg.innerHTML = "";
+                    }, 5000);
+                });
+        });
+    </script>
+</body>
+</html>
